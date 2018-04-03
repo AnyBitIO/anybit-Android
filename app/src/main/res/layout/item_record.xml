@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/contain"
+    android:background="@color/bgColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/h10"
+        android:layout_marginRight="@dimen/h10"
+        android:layout_marginTop="@dimen/h10"
+        android:background="@drawable/bg_white">
+        <View
+            android:id="@+id/record_item_back"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/h1"
+            android:background="@color/text_red"
+            android:layout_height="@dimen/h90"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/record_address"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h40"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/h_distance_20"
+            android:layout_marginTop="@dimen/h10"
+            style="@style/single_line_text"
+            android:layout_toLeftOf="@+id/record_money"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/p18" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/record_money"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h40"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/h10"
+            android:gravity="center"
+            android:text="1000"
+            android:textColor="@color/black"
+            android:textSize="@dimen/p18" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_half"
+            android:layout_below="@+id/record_money"
+            android:layout_margin="@dimen/h6"
+            android:background="@color/divide_color" />
+
+        <TextView
+            android:id="@+id/record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_marginLeft="@dimen/h_distance_20"
+            android:ellipsize="middle"
+            android:maxEms="16"
+            android:singleLine="true"
+            android:text="1000"
+            android:textColor="#bababa"
+            android:textSize="@dimen/p14" />
+
+        <TextView
+            android:id="@+id/record_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider"
+            android:layout_marginRight="@dimen/h10"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="1000"
+            android:textColor="@color/appColor"
+            android:textSize="@dimen/p18" />
+    </RelativeLayout>
+
+</RelativeLayout>

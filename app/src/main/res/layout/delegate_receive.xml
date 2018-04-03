@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ordinary"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/include_address" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/h_distance_side"
+        android:layout_marginRight="@dimen/h_distance_side"
+        android:layout_marginTop="@dimen/h_distance_side"
+        android:layout_marginBottom="@dimen/h_distance_side"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/address"
+            android:textSize="@dimen/p16"
+            android:textColor="@color/_6"
+            android:gravity="center"
+            android:text="666666666"
+            android:layout_margin="@dimen/h_distance_side"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/divide_layout"/>
+        <ImageView
+            android:id="@+id/qr_code"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/h50"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/copy_address"
+            android:layout_width="@dimen/h120"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/h40"
+            android:text="@string/copy_address"
+            android:gravity="center"
+            android:background="@drawable/bg"
+            android:textSize="16sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

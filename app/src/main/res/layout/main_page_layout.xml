@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <FrameLayout
+        android:id="@+id/fragment_contain"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    </FrameLayout>
+    <kualian.dc.deal.application.widget.CommonTabLayout
+        android:id="@+id/common_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h50"
+        android:background="@color/bottom_color"
+        tl:layout_constraintTop_toBottomOf="@+id/fragment_contain"
+        tl:tl_iconHeight="22dp"
+        tl:tl_iconWidth="22dp"
+        tl:tl_indicator_height="0dp"
+        tl:tl_textSelectColor="#0C9AEC"
+        tl:tl_textUnselectColor="#A7A7A7"
+        tl:tl_textsize="10sp">
+
+    </kualian.dc.deal.application.widget.CommonTabLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

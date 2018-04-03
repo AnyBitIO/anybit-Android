@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/h_distance_20">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/h_distance_20"
+            android:layout_marginTop="@dimen/h10"
+            android:drawableLeft="@drawable/back"
+            android:textColor="@color/gray_light_"
+            android:textSize="18sp" />
+
+        <include layout="@layout/icon_layout" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/h_distance_20"
+            android:background="@color/gray_half"
+            android:orientation="vertical"
+            android:padding="@dimen/h10">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:layout_marginRight="@dimen/h10"
+                android:layout_marginTop="@dimen/h10"
+                android:paddingLeft="@dimen/h4"
+                android:text="@string/seed_input"
+                android:textColor="@color/common_color"
+                android:textSize="18sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/h10">
+
+
+                        <kualian.dc.deal.application.widget.flowlayout.TagFlowLayout
+                            android:id="@+id/tag_select"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/bg_white"
+                            android:paddingTop="@dimen/h_distance_side"
+                            android:paddingBottom="@dimen/h_distance_side"
+                            app:max_select="-1">
+
+                        </kualian.dc.deal.application.widget.flowlayout.TagFlowLayout>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/restore_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/h10"
+                        android:background="@drawable/bg_round_red"
+                        android:drawableLeft="@drawable/ic_error"
+                        android:drawablePadding="@dimen/h4"
+                        android:padding="@dimen/h2"
+                        android:text="@string/restore_error_check"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:visibility="invisible" />
+
+                    <kualian.dc.deal.application.widget.flowlayout.TagFlowLayout
+                        android:id="@+id/tag_un_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/h10"
+                        android:layout_marginRight="@dimen/h10"
+                        android:layout_marginTop="@dimen/h10"
+                        app:max_select="-1">
+
+                    </kualian.dc.deal.application.widget.flowlayout.TagFlowLayout>
+                </android.support.v7.widget.LinearLayoutCompat>
+            </ScrollView>
+
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="@dimen/h100"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/h10"
+                android:layout_marginTop="@dimen/h_distance_20"
+                android:background="@drawable/bg"
+                android:text="@string/next"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/p18" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

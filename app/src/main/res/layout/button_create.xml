@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+<Button
+    android:id="@+id/button_next"
+    android:layout_width="match_parent"
+    android:background="@color/appColor"
+    android:textColor="@color/white"
+    android:layout_gravity="center"
+    android:text="@string/finish"
+    android:layout_height="wrap_content" />
+</android.support.v7.widget.LinearLayoutCompat>

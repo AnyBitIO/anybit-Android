@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h70"
+    android:layout_marginBottom="@dimen/h_distance_20"
+    android:padding="@dimen/h6">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/pay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/h_distance_side"
+        android:layout_weight="1"
+        android:background="@drawable/bg_blue_side"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_shoufukuan_fukuan" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/h10"
+            android:text="@string/wallet_pay"
+            android:textColor="@color/bgBlue" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/receive"
+        android:layout_width="0dp"
+        android:layout_marginRight="@dimen/h_distance_side"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/h10"
+        android:layout_weight="1"
+        android:background="@drawable/bg_blue"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/receive_small" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/h10"
+            android:text="@string/wallet_receipt"
+            android:textColor="@color/white" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

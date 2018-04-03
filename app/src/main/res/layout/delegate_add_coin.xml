@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/h10">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/coin_kind"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coin_btc" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:id="@+id/coin_name"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="@dimen/p16"
+        android:layout_marginLeft="@dimen/h10"
+        android:text="btc" />
+
+    <Switch
+        android:layout_marginRight="@dimen/h10"
+        android:id="@+id/add_coin_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.LinearLayoutCompat>

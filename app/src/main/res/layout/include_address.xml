@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:background="@color/bgColor"
+    android:id="@+id/head"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/h10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:paddingBottom="@dimen/h4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white"
+        android:padding="@dimen/h6">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/coin_icon"
+            android:layout_width="@dimen/h40"
+            android:layout_height="@dimen/h40"
+            android:layout_margin="@dimen/h10"
+            android:src="@drawable/coin_ubtc" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/coin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h40"
+            android:layout_alignBaseline="@+id/coin_icon"
+            android:layout_marginTop="@dimen/h10"
+            android:layout_toRightOf="@+id/coin_icon"
+            android:gravity="center"
+            android:textColor="@color/_6"
+            android:text="UBTC"
+            android:textSize="@dimen/p18" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/coin_money"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h40"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/h10"
+            android:gravity="center"
+            android:text="1000"
+            android:textColor="@color/_6"
+            android:textSize="@dimen/p18" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_half"
+            android:layout_below="@+id/coin_money"
+            android:layout_margin="@dimen/h2"
+            android:background="@color/divide_color" />
+
+        <TextView
+            android:id="@+id/coin_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/divider"
+            android:layout_below="@+id/divider"
+            style="@style/single_line_text"
+            android:text="1000"
+            android:textColor="#bababa"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.LinearLayoutCompat>

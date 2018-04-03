@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_black"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="@dimen/h80"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+
+    <kualian.dc.deal.application.widget.loading.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        app:indicatorName="BallTrianglePathIndicator"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/load_message"
+        android:layout_width="wrap_content"
+        android:text="@string/loading_"
+        android:layout_marginTop="@dimen/h4"
+        android:layout_gravity="center"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/h2"
+        android:layout_height="wrap_content" />
+
+</android.support.v7.widget.LinearLayoutCompat>

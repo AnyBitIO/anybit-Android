@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        style="@style/setting_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h200"
+        android:layout_marginBottom="@dimen/h_distance_20">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_marginRight="@dimen/h_distance_20"
+            android:id="@+id/setting_trade_pw"
+            style="@style/setting_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:drawablePadding="@dimen/h4"
+            android:text="@string/setting_pw" />
+
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/setting_pw"
+            android:layout_marginRight="@dimen/h_distance_20"
+            style="@style/setting_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:drawablePadding="@dimen/h4"
+            android:text="@string/setting_login_pw" />
+
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/setting_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/h_distance_20"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/setting_login"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+
+            <Switch
+                android:layout_marginRight="@dimen/h_distance_20"
+                android:id="@+id/setting_re_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

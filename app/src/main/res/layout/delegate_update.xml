@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/h16"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/h90"
+            android:layout_height="@dimen/h90"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/h60"
+            android:src="@mipmap/icon" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/h16"
+            android:layout_weight="1"
+            android:text="uuu"
+            android:textColor="@color/common_color"
+            android:textSize="@dimen/p18" />
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/h10"
+            android:drawableRight="@drawable/ic_next"
+            android:padding="@dimen/h10"
+            android:text="@string/setting_update_tips"
+            android:textColor="@color/_6"
+            android:textSize="@dimen/p18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h1"
+            android:layout_marginLeft="@dimen/h10"
+            android:layout_marginRight="@dimen/h10"
+            android:background="@color/divide_color" />
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/update"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/h10"
+                android:layout_marginBottom="@dimen/h10"
+                android:text="@string/setting_update_now"
+                android:textColor="@color/_6"
+                android:textSize="@dimen/p18" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/update_new"
+                android:layout_marginRight="@dimen/h16"
+                android:layout_width="@dimen/h50"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/h2"
+                android:background="@drawable/bg_round_red"
+                android:text="new"
+                android:textColor="@color/white"
+                android:textSize="@dimen/p16" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h1"
+            android:layout_marginBottom="@dimen/h100"
+            android:layout_marginLeft="@dimen/h10"
+            android:layout_marginRight="@dimen/h10"
+            android:background="@color/divide_color" />
+
+        <TextView
+            android:id="@+id/update_is_new"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/h40"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/p16"
+            android:textColor="#bababa"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/setting_update_new_now" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

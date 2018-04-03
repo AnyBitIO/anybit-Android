@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_text" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        style="@style/setting_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h200"
+        android:layout_marginBottom="@dimen/h_distance_20">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/setting_head"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/h_distance_20"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/h4"
+                android:gravity="center_vertical"
+                android:text="@string/setting_head"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/h_distance_20"
+                android:src="@drawable/head" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/h_distance_20"
+                android:drawablePadding="@dimen/h4"
+                android:gravity="center_vertical"
+                android:text="@string/setting_nick"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:id="@+id/setting_nick"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/h_distance_20"
+                android:background="@null"
+                android:gravity="right"
+                android:textColor="@color/gray_light_"
+                android:textSize="@dimen/p16" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/setting_key"
+            style="@style/setting_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:drawablePadding="@dimen/h4"
+            android:text="@string/setting_key" />
+    </android.support.v7.widget.LinearLayoutCompat>
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:id="@+id/delete_wallet"
+        android:text="@string/setting_delete"
+        android:textColor="#999999"
+        android:background="#EDEDED"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.LinearLayoutCompat>

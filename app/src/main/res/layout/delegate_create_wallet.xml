@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/h_distance_20"
+    android:background="@drawable/b_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/h200"
+        android:src="@drawable/b_loading_logo" />
+
+    <TextView
+        android:id="@+id/account_restore"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/h100"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/h10"
+        android:paddingLeft="@dimen/h_distance_20"
+        android:paddingRight="@dimen/h_distance_20"
+        android:paddingTop="@dimen/h10"
+        android:text="@string/account_restore" />
+
+    <TextView
+        android:id="@+id/account_create"
+        android:layout_width="180dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/h160"
+        android:background="@drawable/bg_blue"
+        android:gravity="center"
+        android:paddingBottom="@dimen/h10"
+        android:paddingLeft="@dimen/h_distance_20"
+        android:paddingRight="@dimen/h_distance_20"
+        android:paddingTop="@dimen/h10"
+        android:text="@string/account_create" />
+
+</FrameLayout>

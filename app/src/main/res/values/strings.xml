@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">AnyBit</string>
+    <string name="app_name_upper">ANYBIT</string>
+    <string name="view_empty">没有数据~</string>
+    <string name="share">分享</string>
+    <string name="empty_record">您还没有交易记录~</string>
+    <string name="empty_contact">暂时没有联系人</string>
+    <string name="view_loading">加载中...~</string>
+    <string name="view_no_network">没有网络~</string>
+    <string name="view_network_error">网络连接异常...</string>
+    <string name="service_fail">出了点小问题,请稍后再试</string>
+    <string name="find_no">敬请期待</string>
+    <!--创建钱包-->
+    <string name="account_create">创建钱包</string>
+    <string name="account_name">设置钱包名称</string>
+    <string name="account_restore">恢复钱包</string>
+    <string name="account_restore_tips">请至少恢复一种货币</string>
+    <string name="account_select_tips">请选择一种货币</string>
+    <string name="account_seed">请输入助记词</string>
+    <string name="account_pw">请设置六位交易密码</string>
+    <string name="account_input_pw">请输入六位交易密码</string>
+    <string name="account_login_pw">请设置六位登录密码</string>
+    <string name="restore_pw">请重新设置六位交易密码</string>
+    <string name="account_pw_tip">请务必记住交易密码，否则无法进行交易</string>
+    <string name="account_login_tip">请记住登录密码</string>
+    <string name="coin_add">添加货币</string>
+    <string name="coin_load">正在加载货币..</string>
+    <!--钱包-->
+    <string name="wallet_money">总资产</string>
+    <string name="wallet_pay">付款</string>
+    <string name="wallet_receipt">收款</string>
+    <string name="wallet_coin">币种</string>
+    <string name="wallet_asset">资产</string>
+    <string name="wallet_all">数量</string>
+    <string name="wallet_freeze">冻结数量</string>
+    <string name="wallet_restore">恢复钱包</string>
+
+    <string-array name="sort_item">
+        <item>钱包</item>
+        <item>行情</item>
+        <item>资讯</item>
+        <item>设置</item>
+    </string-array>
+    <!-- restoredelegate -->
+    <string name="seed_input">请按顺序点击助记词,以确认助记词记录正确</string>
+    <string name="restore_input">请输入助记词</string>
+    <string name="restore_error_checksum">助记词无效，检查是否有拼写错误。</string>
+    <string name="restore_error_check">助记词错误,请重新选择</string>
+    <string name="send_safe">请务必确保助记词的安全</string>
+    <!-- seeddelegaet -->
+    <string name="word_copy">请确认已经保存好如下的钱包助记词并妥善保管，可以用来找回本次创建的钱包。</string>
+    <string name="word_new">触屏生成新的助记词</string>
+    <string name="word_tips">助记词小贴士</string>
+    <string name="word_next">下一步</string>
+    <string name="agree">我已经仔细阅读并已同意</string>
+    <string name="agree_read">请先阅读服务及隐私条款</string>
+    <string name="agree_deal">《服务及隐私条款》</string>
+    <string name="agree_deals">服务及隐私条款</string>
+    <string name="finish">完成</string>
+    <string name="sure">确定</string>
+    <!-- Errors -->
+    <string name="error_generic">执行指令时出错</string>
+    <string name="error_could_not_read_wallet">无法读取钱包</string>
+    <!-- tips -->
+    <string name="tips_exit">再按一次退出程序</string>
+
+    <!--交易-->
+    <string name="trade_tip">温馨提示</string>
+    <string name="trade_time">交易时间</string>
+    <string name="trade_pay">付款</string>
+    <string name="trade_id">对方地址已经复制到粘贴板</string>
+    <string name="trade_address_error">地址有误，请检查后重新输入</string>
+    <string name="trade_money_lack">余额不足,请重新输入数额</string>
+    <string name="trade_fail">构建交易失败</string>
+    <string name="trade_receive">收款</string>
+    <string name="trade_address">对方地址</string>
+    <string name="trade_kind">交易类型</string>
+    <string name="trade_message">备注信息</string>
+    <string name="trade_link">交易ID</string>
+    <string name="trade_error">构建交易失败，请重试</string>
+
+    <string name="trade_tip_content">此页说明交易处理完成，并不\n代表本次交易已经成功，具体交易状态请在\n交易信息列表进行查询</string>
+
+    <string name="scan_qr_code">扫描二维码</string>
+    <string name="scan">扫描二维码</string>
+    <string name="scan_qr">二维码</string>
+    <string name="tips_cash">请输入适当费用，费用过低时可能会影响交\n易速度及成功率</string>
+    <string name="tips_finish">请将信息填写完整</string>
+    <string name="tips_name_empty">钱包名称不能为空</string>
+    <string name="tips_fee_much">手续费过高</string>
+    <string name="tips_input_error">仅可输入中文、字母、数字及其组合</string>
+    <string name="tips_input_long">名称最多输入10个字符</string>
+    <string name="tips_input_max_long">备注最多输入20个字符</string>
+    <string name="tips_name_repetition">钱包名称重复</string>
+    <string name="tips_copy">内容已经复制到粘贴板上</string>
+    <string name="tips_money_max">金额精度只能是8位小数</string>
+    <string name="tips_watch">请注意，当前操作不可撤销！</string>
+    <string name="tips_delete_content">请确认您已备份当前钱包助记词，否则\n将丢失您的货币资产</string>
+    <string name="tips_cash_lack">手续费不能过低，否则难以交易</string>
+    <string name="button_skip">跳过</string>
+    <string name="mail_box">请联系邮箱</string>
+    <string name="back">返回</string>
+    <string name="copy">复制</string>
+    <string name="mail_address">info@blocklinker.com</string>
+
+    <!-- FinalizeWalletRestorationFragment -->
+    <string name="wallet_restoration">在恢复钱包时请耐心等候。</string>
+    <string name="wallet_restoration_master_key">创建主钥</string>
+    <string name="wallet_restoration_coin">为 %1$s 创建私钥</string>
+    <string name="wallet_restoration_error">无法恢复钱包。\n\n%1$s</string>
+    <!--error-->
+    <string name="error_camera">无法访问摄像头</string>
+    <string name="error_pw">密码错误</string>
+    <string name="error_state">网络访问异常，请稍后重试</string>
+    <!--market-->
+    <string name="market">行情</string>
+    <string name="news">资讯</string>
+    <!--密码-->
+    <string name="input_word">请设置支付密码</string>
+    <string name="input_pw">请输入钱包密码</string>
+    <string name="input_login">请输入登录密码</string>
+    <!--收付款-->
+    <string name="copy_address">复制地址</string>
+    <string name="address">地址</string>
+    <string name="money">金额</string>
+    <string name="remark">备注</string>
+    <string name="remind">到账提醒</string>
+    <string name="cash">费用</string>
+    <string name="copy_address_ok">地址已复制到粘贴板</string>
+    <string name="cancel">取消</string>
+    <string name="next">下一步</string>
+    <string name="setting_money">设置收款金额</string>
+    <string name="error_money">请输入正确的金额</string>
+    <!--设置-->
+    <string name="camera_tips">此功能需要摄像头权限</string>
+    <string name="camera_sure">请允许调用系统相机</string>
+    <string name="setting">设置</string>
+    <string name="setting_us">AnyBit支持多种货币的存储及交易，\n 致力于为用户提供更安全、便捷、功能 \n强大的数字资产钱包服务</string>
+    <string name="setting_nick">钱包名称</string>
+    <string name="setting_delete">删除钱包</string>
+    <string name="setting_login_pw_short">修改登录密码</string>
+    <string name="setting_pw_short">修改支付密码</string>
+    <string name="setting_delete_ing">正在删除钱包..</string>
+    <string name="delete">删除</string>
+    <string name="setting_personal">个人中心</string>
+    <string name="setting_head">头像</string>
+    <string name="loading_">加载中...</string>
+    <string name="setting_safe">安全中心</string>
+    <string name="setting_problem">常见问题</string>
+    <string name="setting_deal">使用协议</string>
+    <string name="setting_secret">隐私条款</string>
+    <string name="setting_connect">联系我们</string>
+    <string name="setting_share">推荐分享</string>
+    <string name="setting_download">https://anybit.io/download/anybit.apk</string>
+    <string name="setting_login_pw">修改登录密码</string>
+    <string name="setting_error_pw">原密码错误</string>
+    <string name="setting_error_two">两次密码不一致</string>
+    <string name="setting_login">每次打开应用重新登录</string>
+    <string name="setting_pw">修改支付密码</string>
+    <string name="setting_default">设置默认货币</string>
+    <string name="setting_language">设置系统语言</string>
+    <string name="setting_key">导出私钥</string>
+    <string name="setting_update">检查更新</string>
+    <string name="setting_updating">下载中...</string>
+    <string name="setting_update_now">更新到最新版本</string>
+    <string name="setting_update_new_now">已是最新版本</string>
+    <string name="setting_update_new_two">优化英文版界面</string>
+    <string name="setting_update_content">发布安卓内测版本，该版本包含以下功能：\n\n 1、支持创建以及恢复钱包\n 2、基于助记词创建钱包 \n 3、支持钱包基本功能：收付款、联系人、资讯详情、交易记录以及详情</string>
+
+
+    <string name="setting_update_">更新</string>
+    <string name="setting_update_tips">版本日志</string>
+    <string name="setting_update_new">是否更新为最新版本</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_chinese">简体中文</string>
+    <string name="setting_english">English</string>
+    <string name="setting_korean">韩文</string>
+    <string name="setting_pw_old">输入旧密码</string>
+    <string name="setting_pw_new">输入新密码</string>
+    <string name="setting_pw_sure">确认新密码</string>
+    <string name="setting_pw_tip">请输入六位数字密码</string>
+    <string name="setting_pw_six">密码需由6位数字组成</string>
+    <!--交易-->
+    <string name="record_name">交易记录</string>
+    <string name="record_unsure">待确认</string>
+    <string name="trade_state">交易状态</string>
+    <string name="record_success">成功</string>
+    <string name="record_detail">详情</string>
+    <string name="record_invalid">无效</string>
+    <string name="record_no">还没有交易记录</string>
+    <!--联系人-->
+    <string name="contact">联系人</string>
+    <string name="contact_delete">删除</string>
+    <string name="contact_add">添加联系人</string>
+    <string name="contact_alter">修改联系人</string>
+    <string name="contact_no">您还没有联系人,赶快去添加吧</string>
+    <string name="contact_nick">昵称：</string>
+    <string name="contact_coin">币种：</string>
+    <string name="contact_address">钱包地址：</string>
+    <string name="contact_input">请输入昵称或地址</string>
+    <!--coinkey-->
+    <string name="ub">UBTC</string>
+    <string name="ub_tips">以下是UBTC的地址和私钥,点击可复制</string>
+    <string name="ub_key">UBTC私钥</string>
+    <string name="private_key">私钥</string>
+    <string name="setting_version_now"> 当前版本：V</string>
+    <string name="private_key_tip"> 注意！拥有私钥就可以控制该地址的资产，请储存于可信任的位置，不要分享给其他人</string>
+    <string name="trade_success">交易成功</string>
+    <array name="waveSideBarLetters">
+        <item>\u0023</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+    <string-array name="log_version">
+        <item>V1.3.0</item>
+        <item>V1.1.1</item>
+        <item>V1.0.1</item>
+    </string-array>
+    <string-array name="log_content">
+        <item> 1.增加行情信息 \n 2.优化设置界面\n 3.优化钱包创建流程\n 4.待确认资产不可使用</item>
+        <item>优化英文版界面</item>
+        <item>发布安卓内测版本，该版本包含以下功能：\n\n 1、支持创建以及恢复钱包\n 2、基于助记词创建钱包 \n 3、支持钱包基本功能：收付款、联系人、资讯详情、交易记录以及详情</item>
+    </string-array>
+</resources>

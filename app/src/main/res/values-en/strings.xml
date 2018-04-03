@@ -1,0 +1,286 @@
+<resources>
+    <string name="app_name">AnyBit</string>
+    <string name="app_name_upper">ANYBIT</string>
+    <string name="view_empty">no data~</string>
+    <string name="share">share</string>
+    <string name="empty_record">No trade record yet~</string>
+    <string name="empty_contact"> No Contacts</string>
+    <string name="view_loading">loading...~</string>
+    <string name="view_no_network">Lack of network~</string>
+    <string name="view_network_error">Network connection exception</string>
+    <string name="service_fail">Network connection exception</string>
+    <string name="word_tips">Word tips</string>
+    <string name="error_could_not_read_wallet">could not read wallet</string>
+    <!--创建钱包-->
+    <string name="account_create">Create Wallet </string>
+    <string name="account_name">Please Set Wallet Name</string>
+    <string name="account_restore">Restore Wallet</string>
+    <string name="account_restore_tips">please restore a currency at least</string>
+    <string name="account_select_tips">Please choose a currency</string>
+    <string name="account_seed">Please enter the mnemonic words</string>
+    <string name="account_pw">Please set transaction password</string>
+
+    <string name="account_input_pw">Please Enter Trading Password</string>
+
+    <string name="account_login_pw">Please set login password</string>
+    <string name="restore_pw">Please reset six trade passwords</string>
+    <string name="account_pw_tip">Password is important , otherwise you can not trade</string>
+
+    <string name="account_login_tip">Please remember the login password</string>
+
+    <string name="coin_add">Add Currency</string>
+    <!--钱包-->
+    <string name="setting_nick">Wallet Name</string>
+    <string name="setting_head">Photo</string>
+    <string name="wallet_money">Total assets</string>
+    <string name="wallet_pay">Send</string>
+    <string name="wallet_receipt">Receive</string>
+    <string name="wallet_coin">Currency</string>
+    <string name="wallet_asset">Assets</string>
+    <string name="wallet_all">Amount</string>
+    <string name="wallet_freeze">Frozen amount</string>
+
+    <string name="wallet_restore">Restore Wallet</string>
+
+
+    <string-array name="sort_item">
+        <item>Wallet</item>
+        <item>Markets</item>
+        <item>Information</item>
+        <item>Settings</item>
+    </string-array>
+    <!-- restoredelegate -->
+    <string name="seed_input">Please choose correct mnemonic words in order </string>
+
+    <string name="restore_input">Please enter the mnemonic words that was recorded in the process of creating a wallet</string>
+    <string name="restore_error_checksum">Confirm failed，please examine your mnemonic words</string>
+    <string name="restore_error_check">The mnemonic words are incorrect, please choose again.</string>
+    <string name="send_safe">Make sure your mnemonic word is safe.</string>
+    <!-- seeddelegaet -->
+    <string name="word_copy">Please make sure that the following wallet mnemonic word has been saved and properly kept for retrieving the wallet created this time.</string>
+    <string name="word_new">Touch the screen to generate new mnemonic word</string>
+    <string name="error_generic">An error generates while executing the instruction</string>
+    <string name="word_next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="sure">Confirm</string>
+    <!-- Errors -->
+
+    <!-- tips -->
+    <string name="tips_exit">Press again for exiting from the system</string>
+
+
+    <!--交易-->
+    <string name="trade_tip">Warm Prompt</string>
+    <string name="trade_time">Time</string>
+    <string name="trade_pay">Payment</string>
+    <string name="trade_id">The inside address has been copied to the pasteboard</string>
+    <string name="trade_address_error">Address is incorrect, please check.</string>
+
+    <string name="trade_money_lack">No sufficient funds, please reenter the amount</string>
+
+    <string name="trade_fail">Trade creation fails</string>
+
+    <string name="trade_receive">Receipt</string>
+    <string name="trade_address">Inside address</string>
+
+    <string name="trade_kind">Ttype</string>
+
+    <string name="trade_message">Remarks</string>
+
+    <string name="trade_link">Trade ID</string>
+    <string name="trade_tip_content">This page shows that trade processing is completed, but does not represent the success of this trade, and the specific trade status is inquired in the trade information list.</string>
+    <string name="setting_version_now"> Current Version：V</string>
+
+
+    <string name="scan_qr_code">Scan</string>
+    <string name="tips_cash">An optimum  expense fee has been chosen for you. A higher fee could speed up the process.</string>
+
+    <string name="tips_finish"> Please complete the information.</string>
+    <string name="setting_personal">My Account</string>
+
+    <string name="tips_copy">Copied</string>
+
+    <string name="tips_cash_lack">Service charge cannot be less than one in a million</string>
+    <string name="setting_us">AnyBit supports multiple currencies for storage and trading.
+We aim to provide more Safe、Convenient and Powerful service for your blockchain assets. </string>
+    <string name="button_skip">Skip</string>
+    <string name="mail_box">Contact us with E-MAIL</string>
+
+    <string name="back">Back</string>
+    <string name="mail_address">info@blocklinker.com</string>
+    <string name="tips_name_empty">The name of the wallet cannot be empty.</string>
+    <string name="tips_name_repetition">The name is taken, please try another.</string>
+    <string name="copy">Copy</string>
+    <!-- FinalizeWalletRestorationFragment -->
+    <string name="wallet_restoration">The wallet is being restoring, please wait patiently</string>
+    <string name="tips_input_error">Please input numbers, letters or Chinese.</string>
+    <string name="wallet_restoration_master_key">Create the master key</string>
+    <string name="tips_watch">Caution!This operation CANNOT be revoked!</string>
+    <string name="tips_delete_content">Please confirm that you have backed up your wallet mnemonic words in case you lose your assets.</string>
+    <string name="wallet_restoration_coin">Create the private key for %1$s</string>
+
+    <string name="wallet_restoration_error">The wallet can not be restored.\n\n%1$s</string>
+
+    <!--error-->
+    <string name="error_camera">The camera can not be accessed</string>
+    <string name="error_pw">Password does not match，please try again</string>
+    <string name="error_state">Network access exception, please try again later</string>
+
+    <string name="trade_error">Trade creation failed，try again.</string>
+    <!--密码-->
+    <string name="input_word">Please set payment code</string>
+
+    <string name="input_pw">Please enter wallet code</string>
+
+    <string name="input_login">Login Password</string>
+    <!--收付款-->
+    <string name="copy_address">Copy address</string>
+
+    <string name="address">Address</string>
+    <string name="money">Amount</string>
+
+    <string name="remark">Remark</string>
+
+    <string name="remind">Add a note</string>
+
+    <string name="cash">Fee</string>
+
+    <string name="copy_address_ok">Copied</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="next">NEXT</string>
+    <string name="setting_money">Set receivable amount </string>
+    <string name="setting_delete_ing">Deleting..</string>
+    <string name="error_money">Please enter the correct amount</string>
+    <!--设置-->
+    <string name="delete">Delete</string>
+    <string name="camera_tips">This function requires camera permission</string>
+    <string name="camera_sure">Please allow the invocation of system camera</string>
+    <string name="setting">Settings</string>
+    <string name="setting_delete">Delete Wallet</string>
+    <string name="loading_">loading...</string>
+    <string name="setting_deal">Terms of Use</string>
+    <string name="setting_secret">Privacy Policy</string>
+    <string name="setting_connect">Contact Us</string>
+    <string name="setting_share">Recommend and Share</string>
+    <string name="setting_login_pw">Change Login Password</string>
+    <string name="setting_error_pw">Old password is incorrect</string>
+    <string name="setting_download">https://anybit.io/download/anybit.apk</string>
+    <string name="setting_error_two">Entered passwords differ</string>
+    <string name="setting_safe">Security</string>
+    <string name="setting_problem">FAQ</string>
+    <string name="setting_login">Re-login When App is Open </string>
+    <string name="setting_pw">Change Transaction Password</string>
+
+    <string name="setting_default">Default Currency</string>
+    <string name="setting_update">Update</string>
+    <string name="tips_fee_much">The fee is too high.</string>
+    <string name="setting_language">Language</string>
+    <string name="setting_key">Export Private Key</string>
+    <string name="setting_updating">loading...</string>
+
+    <string name="setting_update_now">Update to the Latest Version</string>
+    <string name="scan">Scan QR Code</string>
+    <string name="scan_qr">QR Code</string>
+    <string name="setting_update_new_now"> No update available</string>
+
+    <string name="setting_update_content">Release the android version for closed test:  which includes the following functions: \n\n 1. support the creation and restoration of wallet \n2. Create the wallet based on mnemonic words \n 3. Support the basic functions of wallet: payments receipts, linkman, information, trade records and details.</string>
+
+    <string name="setting_update_new">Update to version</string>
+
+    <string name="setting_update_">Update</string>
+    <string name="setting_update_tips">Version Release</string>
+    <string name="setting_about_us">About</string>
+    <string name="setting_chinese">简体中文</string>
+    <string name="find_no">Coming soon</string>
+    <string name="tips_input_long">Max 10 characters</string>
+    <string name="tips_input_max_long">Max 20 characters of remark</string>
+    <string name="tips_money_max">转账金额精度只能是8位小数</string>
+    <string name="setting_english">English</string>
+    <string name="setting_korean">Korean</string>
+    <string name="agree_deal">《Terms on Service and Private Policy》</string>
+    <string name="agree_deals">Terms on Service and Private Policy</string>
+    <string name="agree_read">Agree on</string>
+    <string name="agree">Agree on</string>
+    <string name="setting_pw_old">Current password</string>
+    <string name="setting_pw_new">New password</string>
+    <string name="setting_pw_sure">Confirm new password</string>
+    <string name="setting_pw_tip">Please enter six-character numeric password </string>
+    <string name="setting_pw_six">The password is made up of six digits</string>
+
+    <!--交易-->
+    <string name="trade_success">Trade Successfully</string>
+    <string name="record_name">Transaction records</string>
+    <string name="record_unsure">Unconfirmed</string>
+    <string name="trade_state">Status</string>
+    <string name="record_success">Success</string>
+    <string name="setting_login_pw_short">Change password</string>
+    <string name="setting_pw_short">Change password</string>
+    <string name="record_detail">Details</string>
+    <string name="record_invalid">Invalid</string>
+    <string name="setting_update_new_two">Optimize interface of English version</string>
+    <string name="record_no">There are no transaction records to show</string>
+
+    <string name="market">Markets</string>
+    <!--联系人-->
+    <string name="contact">Contacts</string>
+    <string name="contact_delete">Delete</string>
+    <string name="contact_add">Add contact</string>
+
+    <string name="contact_alter">Edit Contract</string>
+
+    <string name="contact_no">No records</string>
+    <string name="contact_nick">Nickname：</string>
+    <string name="contact_coin">Currency:</string>
+
+    <string name="contact_address">Wallet Address：</string>
+    <string name="contact_input">Please enter nickname</string>
+    <string name="news">Information</string>
+    <!--coinkey-->
+    <string name="ub">UBTC</string>
+    <string name="ub_tips">This is your address and private key of your Anybit wallet. Tick them to copy.</string>
+    <string name="coin_load">Loading Currency..</string>
+    <string name="ub_key">UBTC Private Key</string>
+    <string name="private_key">Private Key</string>
+    <string name="private_key_tip"> Caution! Anyone that has your address and private key can control all related assets. Do not share them.</string>
+    <array name="waveSideBarLetters">
+        <item>\u0023</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+    <string-array name="log_version">
+        <item>V1.3.0</item>
+        <item>V1.1.1</item>
+        <item>V1.0.1</item>
+    </string-array>
+    <string-array name="log_content">
+        <item> 1.Add Markets page.\n2.Optimize the  interface of Settings.\n3.Optimizing wallet creation process.\n4.Unconfirmed assets are unusable.</item>
+        <item>Optimize interface of English version</item>
+        <item>Release the android version for closed test:  which includes the following functions: \n\n 1. support the creation and restoration of wallet \n 2. Create the wallet based on mnemonic word \n 3. Support the basic functions of wallet: payments receipts, linkman, information, trade records and details.</item>
+    </string-array>
+</resources>

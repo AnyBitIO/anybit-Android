@@ -1,0 +1,205 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 浮动与Activity窗口之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 没有title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景色为透明 -->
+        <item name="android:background">@android:color/transparent</item>
+         窗口背景色为透明，不设置这个属性，对话框背景会出现四个角
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景模糊显示 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置背景透明度 -->
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <declare-styleable name="LoadingView">
+        <attr name="loadingText" format="string|reference"/>
+        <attr name="loadingTextAppearance" format="reference"/>
+        <attr name="delay" format="integer|reference"/>
+    </declare-styleable>
+
+    <style name="BorderlessButton">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    <style name="BorderlessButtonLink" parent="BorderlessButton">
+        <item name="android:textColor">@color/appColor</item>
+    </style>
+
+
+    <!-- Generic text styles -->
+    <style name="NormalText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/Grey900</item>
+        <item name="android:textColorLink">@color/Grey900</item>
+    </style>
+
+    <style name="NormalBoldText" parent="NormalText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Amount" parent="NormalText">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/splash</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Keyboard">
+        <item name="android:textSize">24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/keyboard_background</item>
+        <item name="android:textColor">#353535</item>
+    </style>
+    <style name="button_style">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/h_distance_20</item>
+        <item name="android:paddingRight">@dimen/h_distance_20</item>
+        <item name="android:paddingTop">@dimen/h10</item>
+        <item name="android:paddingBottom">@dimen/h10</item>
+    </style>
+    <style name="text_coin">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/h_distance_20</item>
+        <item name="android:paddingRight">@dimen/h_distance_20</item>
+        <item name="android:paddingTop">@dimen/h10</item>
+        <item name="android:paddingBottom">@dimen/h10</item>
+    </style>
+    <style name="pay_receipt">
+        <item name="android:gravity">right</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:maxEms">16</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:layout_marginRight">@dimen/h_distance_side</item>
+    </style>
+    <style name="universal_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+
+
+    <!--设置-->
+    <style name="setting_text">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@drawable/ic_next</item>
+        <item name="android:textColor">@color/common_color</item>
+        <item name="android:textSize">@dimen/p18</item>
+        <item name="android:layout_marginLeft">@dimen/h_distance_20</item>
+        <item name="android:layout_marginRight">@dimen/h_distance_20</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--设置关于我们-->
+    <style name="setting_about">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@drawable/ic_next</item>
+        <item name="android:layout_marginRight">@dimen/h_distance_20</item>
+        <item name="android:textColor">@color/common_color</item>
+        <item name="android:textSize">@dimen/p18</item>
+        <item name="android:layout_marginLeft">@dimen/h_distance_20</item>
+    </style>
+    <!--android:layout_marginTop="@dimen/h10"
+
+        android:background="@drawable/bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/h_distance_20"
+        android:paddingRight="@dimen/h10"-->
+    <style name="setting_linear">
+        <item name="android:layout_marginTop">@dimen/h10</item>
+        <item name="android:background">@drawable/bg_white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">@dimen/h10</item>
+        <item name="android:layout_marginRight">@dimen/h10</item>
+    </style>
+
+    <declare-styleable name="WaveSideBarView">
+        <attr name="sidebarTextColor" format="color|reference"/>
+        <attr name="sidebarBackgroundColor" format="color|reference"/>
+        <attr name="sidebarChooseTextColor" format="color|reference"/>
+        <attr name="sidebarTextSize" format="dimension"/>
+        <attr name="sidebarLargeTextSize" format="dimension"/>
+        <attr name="sidebarRadius" format="dimension"/>
+        <attr name="sidebarBallRadius" format="dimension"/>
+    </declare-styleable>
+    <!--loading-->
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">76dip</item>
+        <item name="maxWidth">76dip</item>
+        <item name="minHeight">76dip</item>
+        <item name="maxHeight">76dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">24dip</item>
+        <item name="maxWidth">24dip</item>
+        <item name="minHeight">24dip</item>
+        <item name="maxHeight">24dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+
+    <style name="trade_text">
+        <item name="android:layout_marginLeft">@dimen/h10</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/p18</item>
+        <item name="android:maxEms">16</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">middle</item>
+    </style>
+    <!-- android:maxLength="16"
+                android:maxEms="16"
+                android:singleLine="true"
+                android:ellipsize="middle"-->
+    <style name="single_line_text">
+        <item name="android:maxEms">16</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">middle</item>
+    </style>
+
+    <style name="coin_list_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="trade_detail">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/h10</item>
+        <item name="android:layout_marginRight">@dimen/h10</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

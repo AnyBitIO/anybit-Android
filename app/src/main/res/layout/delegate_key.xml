@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/h10"
+    android:background="@drawable/bg_white"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_margin="@dimen/h10"
+        android:layout_width="@dimen/h40"
+        android:layout_height="@dimen/h40"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/coin_ubtc" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:text="@string/ub"
+        android:id="@+id/key_ub"
+        android:textSize="@dimen/p18"
+        android:drawableRight="@drawable/ic_next"
+        android:textColor="@color/common_color"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

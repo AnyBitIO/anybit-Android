@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_text"/>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:text="@string/contact_nick"
+                android:textColor="@color/common_color"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/contact_nick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/h_distance"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:background="@null" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <include layout="@layout/divide_layout" />
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h60"
+            android:id="@+id/coin_select_contain"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:text="@string/contact_coin"
+                android:textColor="@color/common_color"
+                android:textSize="16sp" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/coin_icon"
+                android:layout_width="@dimen/icon_normal_dp"
+                android:layout_marginLeft="@dimen/h40"
+                android:src="@drawable/coin_ubtc"
+                android:layout_height="@dimen/icon_normal_dp"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/coin_kind"
+                android:gravity="right"
+                android:text="UBTC"
+                android:layout_marginRight="@dimen/h_distance"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/coin_select"
+                android:visibility="gone"
+                android:src="@drawable/ic_down"
+                android:layout_marginRight="@dimen/h_distance_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:text="@string/contact_address"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p16" />
+
+            <AutoCompleteTextView
+                android:id="@+id/contact_address"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/p14"
+                android:textColor="@color/_6"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:background="@null" />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/h_distance"
+                android:id="@+id/scan_qr_code"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scan_gray" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

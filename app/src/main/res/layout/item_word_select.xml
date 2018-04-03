@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/h60"
+    android:paddingLeft="@dimen/h2"
+    android:paddingRight="@dimen/h2"
+    android:paddingTop="3dp"
+    android:layout_height="@dimen/h30">
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/word"
+        android:maxEms="6"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/p14"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+    </android.support.v7.widget.AppCompatTextView>
+</FrameLayout>

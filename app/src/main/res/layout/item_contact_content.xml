@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/contact_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h30"
+        android:text="BTC"
+        android:paddingLeft="@dimen/h_distance_side"
+        android:background="#fafafa"
+        android:textColor="@color/_6"
+        android:textSize="@dimen/text_size_18"
+        >
+
+    </android.support.v7.widget.AppCompatTextView>
+
+   <!-- <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_half"
+        android:layout_marginLeft="@dimen/h30"
+        android:layout_marginRight="@dimen/h_distance_20"
+        android:background="@color/divide_color"
+        android:visibility="gone" />-->
+
+    <kualian.dc.deal.application.widget.EasySwipeMenuLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="@dimen/h30"
+        app:contentView="@+id/content"
+        app:rightMenuView="@+id/right">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/h_distance_side">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/contact_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="BTC"
+                    android:maxLength="16"
+                    android:ellipsize="end"
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/text_size_18" />
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_normal_dp"
+                    android:id="@+id/contact_coin_icon"
+                    android:src="@drawable/coin_btc"
+                    android:layout_height="@dimen/icon_normal_dp" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/contact_coin_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/h6"
+                    android:text="BTC"
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/text_size_18" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/contact_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/single_line_text"
+                android:layout_marginTop="@dimen/h6"
+                android:textColor="@color/_6"
+                android:textSize="@dimen/text_size_14" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="@dimen/h80"
+            android:layout_height="@dimen/h80"
+            android:background="@color/red"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/contact_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/h_distance_20"
+                android:text="@string/contact_delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/p18" />
+        </LinearLayout>
+
+    </kualian.dc.deal.application.widget.EasySwipeMenuLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_half"
+        android:layout_marginLeft="@dimen/h10"
+        android:layout_marginRight="@dimen/h_distance_20"
+        android:layout_marginTop="@dimen/h4"
+        android:background="@color/divide_color" />
+</android.support.v7.widget.LinearLayoutCompat>

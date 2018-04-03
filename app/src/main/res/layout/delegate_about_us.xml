@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/h_distance_20"
+        android:layout_marginLeft="@dimen/h_distance_side"
+        android:layout_marginRight="@dimen/h_distance_side"
+        android:layout_marginTop="@dimen/h_distance_side"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/h80"
+            android:layout_marginTop="@dimen/h60"
+            android:layout_height="@dimen/h80"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/icon" />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/setting_us"
+            android:gravity="center"
+            android:textColor="@color/_9"
+            android:layout_marginTop="@dimen/h_distance_side"
+            android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginTop="@dimen/h60"
+                android:id="@+id/deal"
+                style="@style/setting_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h50"
+                android:text="@string/setting_deal" />
+            <include layout="@layout/divide_layout" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/secret"
+                style="@style/setting_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h50"
+                android:text="@string/setting_secret" />
+            <include layout="@layout/divide_layout" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/connect"
+                style="@style/setting_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h50"
+                android:layout_marginBottom="@dimen/h4"
+                android:text="@string/setting_connect" />
+        <include layout="@layout/divide_layout" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/share"
+            style="@style/setting_about"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h50"
+            android:layout_marginBottom="@dimen/h4"
+            android:text="@string/setting_share" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

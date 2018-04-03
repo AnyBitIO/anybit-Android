@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/h30"
+    android:background="@drawable/b_bg"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:id="@+id/back"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:layout_marginLeft="@dimen/h_distance_20"
+            android:layout_marginTop="@dimen/h10"
+            android:drawableLeft="@drawable/back"
+            android:textColor="@color/gray_light_" />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/skip"
+            android:textSize="18sp"
+            android:layout_marginRight="@dimen/h_distance_20"
+            android:layout_marginTop="@dimen/h10"
+            android:text="@string/button_skip"
+            android:textColor="@color/gray_light_" />
+
+        <include layout="@layout/icon_layout" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/h_distance_20"
+            android:background="@color/gray_half"
+            android:orientation="vertical"
+            android:padding="@dimen/h10">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/title"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_color"
+                android:layout_margin="@dimen/h10"
+                android:paddingLeft="@dimen/h4"
+                android:text="@string/seed_input"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/h10"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/seed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg"
+                    android:gravity="left"
+                    android:hint="@string/account_seed"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:lines="6"
+                    android:padding="@dimen/h10"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/scan_qr_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/scan_qr_code"
+                    android:onClick="onClick"
+                    android:src="@drawable/qr_code"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/restore_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:background="@drawable/bg_round_red"
+                android:drawableLeft="@drawable/ic_error"
+                android:padding="@dimen/h2"
+                android:drawablePadding="@dimen/h4"
+                android:visibility="invisible"
+                android:text="@string/restore_error_checksum"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                />
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/h_distance_20"
+                android:layout_marginBottom="@dimen/h10"
+                android:background="@drawable/bg"
+                android:text="@string/next"
+                android:textSize="@dimen/p18"
+                android:textColor="@color/text_gray" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </LinearLayout>
+</ScrollView>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

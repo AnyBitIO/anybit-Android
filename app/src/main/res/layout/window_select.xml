@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/h160"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/h4"
+    android:background="@drawable/bg_white"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/one"
+        android:gravity="center_vertical"
+        android:padding="@dimen/h10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/coin_name"
+            style="@style/universal_text"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/h10"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wallet_all" />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/select_bit"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_right_white" />
+    </android.support.v7.widget.LinearLayoutCompat>
+    <include layout="@layout/divide_layout"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/select_item"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_right" />
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:id="@+id/two"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/h10">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/universal_text"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/h10"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/wallet_freeze" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/select_ub"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_right_white" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,75 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="h_half">0.5dp</dimen>
+    <dimen name="h1">1dp</dimen>
+    <dimen name="h2">2dp</dimen>
+    <dimen name="h4">4dp</dimen>
+    <dimen name="app_distance">5dp</dimen>
+
+    <dimen name="h6">6dp</dimen>
+    <dimen name="h8">8dp</dimen>
+    <dimen name="h10">10dp</dimen>
+    <dimen name="h_distance_side">12dp</dimen>
+    <dimen name="h16">16dp</dimen>
+    <dimen name="h18">18dp</dimen>
+    <dimen name="h_distance_20">20dp</dimen>
+    <dimen name="h_distance">24dp</dimen>
+
+    <dimen name="h30">30dp</dimen>
+    <dimen name="h36">36dp</dimen>
+    <dimen name="tool_height">36dp</dimen>
+    <dimen name="actionBarSize">40dp</dimen>
+    <dimen name="h40">40dp</dimen>
+    <dimen name="h44">44dp</dimen>
+    <dimen name="h48">48dp</dimen>
+    <dimen name="icon_normal_dp">32dp</dimen>
+    <dimen name="h50">50dp</dimen>
+    <dimen name="h60">60dp</dimen>
+    <dimen name="h64">64dp</dimen>
+    <dimen name="h70">70dp</dimen>
+    <dimen name="h80">80dp</dimen>
+    <dimen name="h90">90dp</dimen>
+    <dimen name="h100">100dp</dimen>
+    <dimen name="h120">120dp</dimen>
+    <dimen name="h130">130dp</dimen>
+    <dimen name="h140">140dp</dimen>
+    <dimen name="h160">160dp</dimen>
+    <dimen name="h200">200dp</dimen>
+
+
+    <dimen name="p12">12sp</dimen>
+    <dimen name="p14">14sp</dimen>
+    <dimen name="p16">16sp</dimen>
+    <dimen name="p18">18sp</dimen>
+    <dimen name="p20">20sp</dimen>
+    <dimen name="p22">22sp</dimen>
+
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+
+
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="half_standard_margin">8dp</dimen>
+    <dimen name="quarter_standard_margin">4dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- Coin icons -->
+    <dimen name="generic_icon_size">36dp</dimen>
+    <dimen name="generic_medium_icon_size">48dp</dimen>
+
+    <!-- Qr codes -->
+    <dimen name="qr_code_size">218dp</dimen>
+    <dimen name="qr_code_quite_zone_pixels">0px</dimen>
+    <dimen name="qr_code_margin">16dp</dimen>
+
+    <dimen name="textSize_sidebar">10sp</dimen>
+    <dimen name="large_textSize_sidebar">32sp</dimen>
+    <dimen name="textSize_sidebar_choose">12sp</dimen>
+    <dimen name="textSize_sidebar_padding">20sp</dimen>
+    <dimen name="radius_sidebar">20dp</dimen>
+    <dimen name="ball_radius_sidebar">24dp</dimen>
+</resources>

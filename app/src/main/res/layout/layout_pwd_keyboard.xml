@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/keyboard_hide"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/keyboard_background"
+        android:padding="4dp"
+        android:src="@drawable/img_kb_hide"
+        android:tag="hide" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/keyboard_1"
+            style="@style/Keyboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="1"
+            android:text="1" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/keyboard_2"
+            style="@style/Keyboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="2"
+            android:text="2" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/keyboard_3"
+            style="@style/Keyboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="3"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/keyboard_4"
+            style="@style/Keyboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="4"
+            android:text="4" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/keyboard_5"
+            style="@style/Keyboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="5"
+            android:text="5" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/keyboard_6"
+            style="@style/Keyboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="6"
+            android:text="6" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/keyboard_7"
+            style="@style/Keyboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="7"
+            android:text="7" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/keyboard_8"
+            style="@style/Keyboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="8"
+            android:text="8" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/keyboard_9"
+            style="@style/Keyboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="9"
+            android:text="9" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+#"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/keyboard_0"
+            style="@style/Keyboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="0"
+            android:text="0" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/keyboard_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_kb_delete"
+            android:tag="delete" />
+
+    </LinearLayout>
+
+</LinearLayout>

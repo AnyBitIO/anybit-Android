@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/h10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/h40"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textColor="@color/appColor"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:text="@string/cancel" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:id="@+id/next"
+        android:layout_height="@dimen/h40"
+        android:layout_marginLeft="@dimen/h_distance_20"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:background="@drawable/bg_blue"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/word_next" />
+</android.support.v7.widget.LinearLayoutCompat>

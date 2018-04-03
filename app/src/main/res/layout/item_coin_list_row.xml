@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coin_contain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/h6">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:paddingLeft="@dimen/h10"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/coin_icon"
+            android:layout_width="@dimen/icon_normal_dp"
+            android:layout_height="@dimen/icon_normal_dp"
+            android:layout_marginRight="@dimen/h4"
+            android:src="@drawable/coin_btc" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/coin_name"
+            android:gravity="left"
+            android:textSize="@dimen/p16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/coin_number"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/p16"
+        android:layout_margin="@dimen/h6" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/coin_money"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/p16"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/h6" />
+</android.support.v7.widget.LinearLayoutCompat>

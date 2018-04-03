@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/h30"
+    android:paddingBottom="@dimen/h10"
+    android:background="@color/appColor"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="@dimen/h6" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/p18"
+             />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/toolbar_next"
+            android:textColor="@color/white"
+            android:text="@string/sure"
+            android:textSize="@dimen/p16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/h16"
+             />
+
+    </android.support.v7.widget.Toolbar>
+

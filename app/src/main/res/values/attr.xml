@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonTabLayout">
+        <!-- indicator -->
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_width" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_gravity" />
+        <attr name="tl_indicator_style" />
+        <attr name="tl_indicator_anim_enable" />
+        <attr name="tl_indicator_anim_duration" />
+        <attr name="tl_indicator_bounce_enable" />
+
+        <!-- underline -->
+        <attr name="tl_underline_color" />
+        <attr name="tl_underline_height" />
+        <attr name="tl_underline_gravity" />
+
+        <!-- divider -->
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+
+        <!-- tab -->
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+
+        <!-- title -->
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+
+        <!-- icon -->
+        <!-- 设置icon宽度 -->
+        <attr name="tl_iconWidth" format="dimension" />
+        <!-- 设置icon高度 -->
+        <attr name="tl_iconHeight" format="dimension" />
+        <!-- 设置icon是否可见 -->
+        <attr name="tl_iconVisible" format="boolean" />
+        <!-- 设置icon显示位置,对应Gravity中常量值 -->
+        <attr name="tl_iconGravity" format="enum">
+            <enum name="LEFT" value="3" />
+            <enum name="TOP" value="48" />
+            <enum name="RIGHT" value="5" />
+            <enum name="BOTTOM" value="80" />
+        </attr>
+        <!-- 设置icon与文字间距 -->
+        <attr name="tl_iconMargin" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="MsgView">
+        <!-- 圆角矩形背景色 -->
+        <attr name="mv_backgroundColor" format="color" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_cornerRadius" format="dimension" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_strokeWidth" format="dimension" />
+        <!-- 圆角边框颜色-->
+        <attr name="mv_strokeColor" format="color" />
+        <!-- 圆角弧度是高度一半-->
+        <attr name="mv_isRadiusHalfHeight" format="boolean" />
+        <!-- 圆角矩形宽高相等,取较宽高中大值-->
+        <attr name="mv_isWidthHeightEqual" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Amount">
+        <attr name="show_big" format="boolean" />
+        <attr name="single_line" format="boolean" />
+        <attr name="show_small" format="boolean" />
+    </declare-styleable>
+
+
+    <!--密码输入框-->
+    <declare-styleable name="PswText">
+        <!--密码长度-->
+        <attr name="pswLength" format="integer" />
+        <!--密码框颜色-->
+        <!--密码颜色-->
+        <attr name="pswColor" format="color" />
+        <!--输入时密码框颜色-->
+        <attr name="inputBorder_color" format="color" />
+        <!--输入时密码框阴影颜色-->
+        <attr name="borderShadow_color" format="color" />
+        <!--明文密码文字大小-->
+        <attr name="psw_textSize" format="dimension" />
+        <!--密码框圆角程度-->
+        <attr name="borderRadius" format="dimension" />
+        <!--是否使用图片绘制密码框-->
+        <attr name="isDrawBorderImg" format="boolean" />
+        <!--按back键时，是否需要绘制明文密码-->
+        <attr name="isShowTextPsw" format="boolean" />
+        <!--输入密码时密码框是否有阴影-->
+        <attr name="isShowBorderShadow" format="boolean" />
+        <!--密码框图片-->
+        <attr name="borderImg" format="reference" />
+        <!--输入时变化的密码框图片-->
+        <attr name="inputBorderImg" format="reference" />
+        <!--延迟绘制密码圆点的时间,1000 = 1s-->
+        <attr name="delayTime" format="integer" />
+        <!--是否只绘制明文密码-->
+        <attr name="clearTextPsw" format="boolean" />
+        <!--是否只绘制圆点-->
+        <attr name="darkPsw" format="boolean" />
+        <!--是否在输入密码时不更改密码框颜色-->
+        <attr name="isChangeBorder" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CodeView">
+        <attr name="length" format="integer" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="dividerColor" format="color" />
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="code" format="string" />
+        <attr name="codeColor" format="color" />
+        <attr name="pointRadius" format="dimension" />
+        <attr name="isDrawBorder" format="boolean" />
+        <attr name="textSize" format="dimension" />
+        <attr name="showType" format="enum">
+            <enum name="word" value="1" />
+            <enum name="password" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!--loading-->
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension" />
+        <attr name="minHeight" format="dimension" />
+        <attr name="maxHeight" format="dimension" />
+        <attr name="indicatorName" format="string" />
+        <attr name="indicatorColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="EasySwipeMenuLayout">
+        <attr name="leftMenuView" format="reference" />
+        <attr name="rightMenuView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="canRightSwipe" format="boolean" />
+        <attr name="canLeftSwipe" format="boolean" />
+        <attr name="fraction" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

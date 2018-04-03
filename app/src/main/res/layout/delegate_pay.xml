@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ordinary"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/include_address" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/h40"
+        android:layout_marginLeft="@dimen/h10"
+        android:layout_marginRight="@dimen/h10"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/h10"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h_distance"
+                android:text="@string/address"
+                android:textColor="@color/_6"
+                android:textSize="@dimen/sp_16" />
+
+            <AutoCompleteTextView
+                android:id="@+id/pay_address"
+                style="@style/pay_receipt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/qr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/h4"
+                android:drawableLeft="@drawable/scan_black"
+                android:drawablePadding="@dimen/h6" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/h_distance"
+                android:drawableLeft="@drawable/contact"
+                android:drawablePadding="@dimen/h4" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/h10"
+            android:layout_weight="1"
+
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h_distance"
+                android:text="@string/money"
+                android:textColor="@color/_6"
+                android:textSize="@dimen/sp_16" />
+
+            <AutoCompleteTextView
+                android:id="@+id/pay_money"
+                style="@style/pay_receipt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal|number" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/coin_kind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h4"
+                android:layout_marginRight="@dimen/h_distance"
+                android:text="BTC"
+                android:textColor="@color/_6" />
+
+            <!-- <android.support.v7.widget.AppCompatImageView
+                 android:id="@+id/select_kind"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_down" />-->
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/h10"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h_distance"
+                android:text="@string/remark"
+                android:textColor="@color/_6"
+                android:textSize="@dimen/sp_16" />
+
+            <AutoCompleteTextView
+                android:id="@+id/remark"
+                android:inputType="text"
+                style="@style/pay_receipt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/h_distance"
+                />
+
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/h10"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h_distance"
+                android:text="@string/cash"
+                android:textColor="@color/_6"
+                android:textSize="@dimen/sp_16" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h_distance_20"
+                android:text="—"
+                android:textSize="24sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/cash"
+                style="@style/pay_receipt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number|numberDecimal"
+                android:text="0.0001" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/h_distance_20"
+                android:inputType="number"
+                android:text="+"
+                android:textSize="24sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/cash_kind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h4"
+                android:layout_marginRight="@dimen/h_distance"
+                android:text="UBTC"
+                android:textColor="@color/_6" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/h_distance_side"
+            android:layout_marginLeft="@dimen/h_distance"
+            android:layout_marginRight="@dimen/h_distance"
+            android:layout_marginTop="@dimen/h6"
+            android:text="@string/tips_cash"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/h10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/h40"
+            android:layout_weight="1"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text="@string/cancel"
+            android:textColor="@color/appColor"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_gravity="bottom"
+            android:layout_height="@dimen/h40"
+            android:layout_marginLeft="@dimen/h_distance_20"
+            android:layout_weight="1"
+            android:background="@drawable/bg_blue"
+            android:gravity="center"
+            android:text="@string/word_next"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

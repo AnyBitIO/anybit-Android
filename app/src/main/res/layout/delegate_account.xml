@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/content"
+            android:paddingTop="@dimen/h30"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_first"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="0dp">
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/actionBarSize">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="@string/app_name"
+                        android:textColor="#A3D8FB"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/coin_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/h10"
+                        android:drawableRight="@drawable/ic_add" />
+                </android.support.v7.widget.Toolbar>
+                <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h100"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/h60"
+                        android:layout_margin="@dimen/h_distance_20"
+                        android:src="@drawable/bg_line" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/empty_add"
+                        android:text="@string/coin_add"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/h4"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_add" />
+                </FrameLayout>-->
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/h10"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/coin_total_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/p16" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/coin_total_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:layout_marginLeft="@dimen/h4"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/h4"
+                        android:text="@string/wallet_money"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/money_select"
+                        android:layout_marginTop="@dimen/h2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:thumb="@drawable/thumb"
+                        app:track="@drawable/switch_bg" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/h10"
+                    android:gravity="center">
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/pay"
+                        android:id="@+id/coin_pay"
+                        android:layout_height="wrap_content" />
+                  <!--  <android.support.v7.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/pay"
+                        android:gravity="center"
+                        android:text="@string/wallet_pay"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/p18" />-->
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/receive"
+                        android:id="@+id/coin_receive"
+                        android:layout_marginLeft="@dimen/h90"
+
+                        android:layout_height="wrap_content" />
+                    <!--<android.support.v7.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/h4"
+                        android:drawableTop="@drawable/receive"
+                        android:gravity="center"
+                        android:text="@string/wallet_receipt"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/p18" />-->
+                </android.support.v7.widget.LinearLayoutCompat>
+            </LinearLayout>
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:layout_margin="@dimen/h_distance_side"
+                android:background="@drawable/bg_white"
+                android:orientation="vertical"
+                >
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_distance_side"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/h6"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/wallet_coin"
+                        android:textSize="@dimen/p18" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/select"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/wallet_all"
+                        android:textSize="@dimen/p18" />
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/h6"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/wallet_asset"
+                        android:textSize="@dimen/p18" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_coin"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="@dimen/h10">
+
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <include
+            layout="@layout/view_stub_add"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_white"
+
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:id="@+id/log_version"
+                android:layout_weight="1"
+                android:text="v1.0.1"
+                android:textSize="@dimen/p18"
+                android:textColor="@color/common_color"
+                android:layout_margin="@dimen/h_distance_20"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/log_down"
+                android:src="@drawable/ic_down_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/h_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/divide_layout"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:id="@+id/log_content"
+            android:text="@string/setting_update_content"
+            android:textSize="@dimen/p16"
+            android:textColor="@color/_6"
+            android:layout_marginLeft="@dimen/h_distance"
+            android:layout_marginRight="@dimen/h_distance"
+            android:layout_marginTop="@dimen/h_distance_side"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

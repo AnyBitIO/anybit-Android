@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/h_distance_20"
+    android:background="@drawable/b_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/icon_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="@dimen/h10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/code_contain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/h_distance_20"
+            android:layout_marginRight="@dimen/h_distance_20"
+            android:background="@drawable/bg_white"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/wallet_pw_title"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/h6"
+                android:layout_weight="1"
+                android:text="@string/input_login"
+                android:textColor="@color/black"
+                android:textSize="@dimen/p18" />
+
+            <kualian.dc.deal.application.widget.codeView.CodeView
+                android:id="@+id/password_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/h16"
+                android:background="#ffffff"
+                app:borderColor="#bebebe"
+                app:borderWidth="2px"
+                app:dividerColor="@color/divide_color_dark"
+                app:dividerWidth="2px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_half"
+                android:layout_marginTop="@dimen/h16"
+                android:background="@color/divide_color" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/h16"
+                android:layout_weight="1"
+                android:text="@string/wallet_restore"
+                android:textSize="@dimen/p18" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+    <!-- <RelativeLayout
+         android:layout_below="@+id/head"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1">
+
+
+
+     </RelativeLayout>-->
+
+    <kualian.dc.deal.application.widget.codeView.KeyboardView
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true" />
+
+</android.support.v7.widget.LinearLayoutCompat>

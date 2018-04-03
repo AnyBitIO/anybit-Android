@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/h_distance_20"
+        android:text="@string/ub_tips"
+        android:textColor="@color/_6"
+        android:textSize="@dimen/p16" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/h10"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/h10"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="@dimen/h120"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/coin_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:textColor="@color/gray_light_"
+                android:textSize="@dimen/p18" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/h10"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="@dimen/h120"
+                android:layout_height="wrap_content"
+                android:text="@string/private_key"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/coin_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:textColor="@color/gray_light_"
+                android:textSize="@dimen/p18" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/h_distance_20"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_watch" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/h_distance_20"
+            android:layout_marginTop="@dimen/h_distance_20"
+            android:gravity="center"
+            android:text="@string/private_key_tip"
+            android:textColor="@color/_6"
+            android:textSize="@dimen/p14" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

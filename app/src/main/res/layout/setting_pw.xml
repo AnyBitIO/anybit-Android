@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h60"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/h10"
+            android:text="@string/setting_pw_old"
+            android:textColor="@color/common_color"
+            android:textSize="16sp" />
+
+        <AutoCompleteTextView
+            android:inputType="number|numberPassword"
+            android:id="@+id/setting_old_pw"
+            android:layout_width="match_parent"
+            android:maxLength="6"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/h10"
+            android:background="@null" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/h_distance_20"
+        android:text="@string/setting_pw_tip"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:text="@string/setting_pw_new"
+                android:textColor="@color/common_color"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/setting_new_pw"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="number|numberPassword"
+                android:maxLength="6"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:background="@null" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/h10"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eye" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <include layout="@layout/divide_layout" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:text="@string/setting_pw_sure"
+                android:textColor="@color/common_color"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/setting_sure_pw"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:maxLength="6"
+                android:inputType="number|numberPassword"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h10"
+                android:background="@null" />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/h10"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eye" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

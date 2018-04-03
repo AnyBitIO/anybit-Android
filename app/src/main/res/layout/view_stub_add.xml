@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/h30"
+    android:id="@+id/empty_view"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_bg"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatTextView
+        android:text="@string/app_name"
+        android:textSize="@dimen/p18"
+        android:textColor="#A6DCFD"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/h_distance_20"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/h10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/h10"
+        android:layout_height="@dimen/h120"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h80"
+            android:layout_margin="@dimen/h_distance_20"
+            android:src="@drawable/bg_line" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/empty_add"
+            android:text="@string/coin_add"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:drawablePadding="@dimen/h4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_add" />
+    </FrameLayout>
+</android.support.v7.widget.LinearLayoutCompat>

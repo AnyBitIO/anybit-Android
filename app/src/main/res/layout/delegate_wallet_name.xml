@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_bg"
+    android:paddingTop="@dimen/h30"
+    android:orientation="vertical">
+
+    <include layout="@layout/icon_layout" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/h_distance_20"
+        android:layout_marginRight="@dimen/h_distance_20"
+        android:layout_marginTop="@dimen/h60"
+        android:paddingTop="@dimen/h_distance_20"
+        android:paddingBottom="@dimen/h_distance_20"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+       >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/account_name" />
+
+        <AutoCompleteTextView
+            android:id="@+id/account_name"
+            android:layout_width="@dimen/h160"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/h4"
+            android:paddingRight="@dimen/h4"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/p12"
+                android:text="@string/agree" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/agree_deal"
+                android:layout_height="wrap_content"
+                android:text="@string/agree_deal"
+                android:textSize="@dimen/p12"
+                android:textColor="@color/appColor" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/button_next"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/h10"
+            android:background="@drawable/bg_gray"
+            android:text="@string/word_next" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

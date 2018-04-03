@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+def cfg = rootProject.ext.android
+def librarys = rootProject.ext.dependencies
+def excludes = rootProject.ext.excludes
+android {
+    compileSdkVersion cfg.compileSdkVersion
+    buildToolsVersion cfg.buildToolsVersion
+    defaultConfig {
+        applicationId cfg.applicationId
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.compileSdkVersion
+        versionCode cfg.versionCode
+        versionName cfg.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            moduleName "test_command" //生成的so名字
+            abiFilters "armeabi", "armeabi-v7a", "x86" //输出指定的三种abi体系下的so库
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.config
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.config
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    //compile 'com.android.support:multidex:1.0.1'
+    compile 'me.yokeyword:fragmentation:1.1.9'
+    compile 'com.google.code.gson:gson:2.7'
+    librarys.each { k, v -> compile v }
+    excludes.each { entry ->
+        compile(entry.key) {
+            entry.value.each { childEntry ->
+                exclude(group: childEntry.key, module: childEntry.value)
+            }
+        }
+
+    }
+    implementation files('libs/jsonrpc4j-1.4.1.jar')
+    implementation project(':okhttputils')
+}
